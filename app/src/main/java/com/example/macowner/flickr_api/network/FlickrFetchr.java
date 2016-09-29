@@ -7,7 +7,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 /**
- * Created by macowner on 9/29/16.
+ * Created by Mikhail on 9/29/16.
  */
 public class FlickrFetchr {
 
