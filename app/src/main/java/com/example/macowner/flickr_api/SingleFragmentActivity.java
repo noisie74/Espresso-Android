@@ -1,7 +1,7 @@
 package com.example.macowner.flickr_api;
 
 /**
- * Created by macowner on 9/29/16.
+ * Created by Mikhail on 9/29/16.
  */
 
 import android.os.Bundle;
