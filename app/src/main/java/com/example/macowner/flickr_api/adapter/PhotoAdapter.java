@@ -36,7 +36,7 @@ public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.PhotoHolder>
     public PhotoHolder(View itemView) {
       super(itemView);
 
-      mItemImageView = (ImageView) itemView.findViewById(R.id.fragment_photo_gallery_recycler_view);
+      mItemImageView = (ImageView) itemView.findViewById(R.id.gallery_item_image_view);
     }
 
 

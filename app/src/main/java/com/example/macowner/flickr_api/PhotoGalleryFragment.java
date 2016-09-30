@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +37,7 @@ public class PhotoGalleryFragment extends Fragment {
     @Override
     protected void onPostExecute(List<GalleryItem> items) {
       mItems = items;
+      Log.d("PhotoGalleryFragment",items.toString());
       setupAdapter();
     }
   }
@@ -50,6 +52,7 @@ public class PhotoGalleryFragment extends Fragment {
     super.onCreate(savedInstanceState);
     setRetainInstance(true);
     new FetchItemsTask().execute();
+
   }
 
   @Override
