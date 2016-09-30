@@ -7,7 +7,7 @@ public class GalleryItem {
 
   private String mCaption;
   private String mId;
-  private String mUrl;
+  private String url_s;
 
   @Override
   public String toString() {
@@ -31,10 +31,10 @@ public class GalleryItem {
   }
 
   public String getUrl() {
-    return mUrl;
+    return url_s;
   }
 
   public void setUrl(String url) {
-    mUrl = url;
+    url_s = url;
   }
 }
