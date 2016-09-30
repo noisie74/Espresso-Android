@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import com.example.macowner.flickr_api.adapter.PhotoAdapter;
 import com.example.macowner.flickr_api.model.GalleryItem;
 import com.example.macowner.flickr_api.network.FlickrFetchr;
+//import com.example.macowner.flickr_api.service.PollService;
 import com.example.macowner.flickr_api.service.PollService;
 import com.example.macowner.flickr_api.util.QueryPreferences;
 
@@ -40,7 +41,7 @@ public class PhotoGalleryFragment extends Fragment {
     private String mQuery;
 
     public FetchItemsTask(String query) {
-      query = mQuery;
+      mQuery = query;
     }
 
     @Override
