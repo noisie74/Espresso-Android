@@ -1,7 +1,6 @@
 package com.example.macowner.flickr_api.adapter;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,7 +35,7 @@ public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.PhotoHolder>
     public PhotoHolder(View itemView) {
       super(itemView);
 
-      mItemImageView = (ImageView) itemView.findViewById(R.id.fragment_photo_gallery_recycler_view);
+      mItemImageView = (ImageView) itemView.findViewById(R.id.gallery_item_image_view);
     }
 
 
