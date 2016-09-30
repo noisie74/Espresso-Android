@@ -13,4 +13,8 @@ public class Photos {
     private Photos(ArrayList<Photo> photo) {
         this.photo = photo;
     }
+
+    public ArrayList<Photo> getPhoto() {
+        return photo;
+    }
 }

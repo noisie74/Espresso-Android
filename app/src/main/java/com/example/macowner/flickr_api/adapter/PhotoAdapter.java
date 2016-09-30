@@ -7,11 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.macowner.flickr_api.R;
-import com.example.macowner.flickr_api.model.GalleryItem;
+import com.example.macowner.flickr_api.model.Photo;
 
 import java.util.List;
 
@@ -22,11 +21,11 @@ import java.util.List;
 
 public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.PhotoHolder> {
 
-  private List<GalleryItem> mGalleryItems;
+  private List<Photo> mGalleryItems;
   Context context;
 
 
-  public PhotoAdapter(List<GalleryItem> galleryItems) {
+  public PhotoAdapter(List<Photo> galleryItems) {
     mGalleryItems = galleryItems;
   }
 
@@ -53,9 +52,7 @@ public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.PhotoHolder>
 
   @Override
   public void onBindViewHolder(PhotoHolder holder, int position) {
-    GalleryItem galleryItem = mGalleryItems.get(position);
-
-    Glide.with(context).load(galleryItem.getUrl())
+    Glide.with(context).load(mGalleryItems.get(position).getUrl())
         .placeholder(R.drawable.placeholder)
         .into(holder.mItemImageView);
   }

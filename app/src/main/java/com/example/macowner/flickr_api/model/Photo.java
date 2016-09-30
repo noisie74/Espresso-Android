@@ -1,5 +1,7 @@
 package com.example.macowner.flickr_api.model;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by Mikhail on 9/29/16.
  */
@@ -7,6 +9,7 @@ public class Photo {
 
     private String mCaption;
     private String mId;
+    @SerializedName("url_s")
     private String mUrl;
 
     @Override
@@ -32,5 +35,9 @@ public class Photo {
 
     public String getUrl() {
         return mUrl;
+    }
+
+    public void setUrl(String url) {
+        mUrl = url;
     }
 }

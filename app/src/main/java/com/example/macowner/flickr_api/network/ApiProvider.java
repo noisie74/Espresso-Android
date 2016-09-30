@@ -13,14 +13,14 @@ import retrofit2.http.Query;
  */
 public class ApiProvider {
 
-    public static final String API_URL = " https://api.flickr.com/services/rest";
+    public static final String API_URL = "https://api.flickr.com/services/";
     public static final String EXTRA_SMALL_URL = "url_s";
-    private static final String API_KEY = "f55905acfce160a08a05c0d94a1d2961";
+    public static final String API_KEY = "f55905acfce160a08a05c0d94a1d2961";
 
 
     public interface ApiCall {
-        
-        @GET("/rest/")
+
+        @GET("rest/")
         Call<GalleryItem> getRecent(@Query("method") String method,
                                     @Query("api_key") String API_KEY,
                                     @Query("format") String format,
