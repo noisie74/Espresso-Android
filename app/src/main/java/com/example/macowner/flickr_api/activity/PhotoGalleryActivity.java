@@ -1,8 +1,10 @@
-package com.example.macowner.flickr_api;
+package com.example.macowner.flickr_api.activity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
+
+import com.example.macowner.flickr_api.fragment.PhotoGalleryFragment;
 
 
 public class PhotoGalleryActivity extends SingleFragmentActivity {

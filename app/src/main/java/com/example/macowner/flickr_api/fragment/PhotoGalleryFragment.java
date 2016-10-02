@@ -1,7 +1,5 @@
-package com.example.macowner.flickr_api;
+package com.example.macowner.flickr_api.fragment;
 
-import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -16,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.macowner.flickr_api.R;
 import com.example.macowner.flickr_api.adapter.PhotoAdapter;
 import com.example.macowner.flickr_api.model.GalleryItem;
 import com.example.macowner.flickr_api.network.FlickrFetchr;
@@ -29,7 +28,7 @@ import java.util.List;
 /**
  * Created by Mikhail on 9/29/16.
  */
-public class PhotoGalleryFragment extends Fragment {
+public class PhotoGalleryFragment extends VisibleFragment {
 
   private RecyclerView mPhotoRecyclerView;
   private List<GalleryItem> mItems = new ArrayList<>();
