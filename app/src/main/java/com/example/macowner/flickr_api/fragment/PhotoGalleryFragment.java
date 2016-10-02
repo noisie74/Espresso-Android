@@ -158,4 +158,3 @@ public class PhotoGalleryFragment extends VisibleFragment {
   }
 }
 
-//https://github.com/daseyffert/PhotoGallery/blob/master/app/src/main/java/com/bignerdranch/android/photogallery/PollService.java
