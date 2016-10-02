@@ -1,4 +1,4 @@
-package com.example.macowner.flickr_api;
+package com.example.macowner.flickr_api.activity;
 
 /**
  * Created by Mikhail on 9/29/16.
@@ -10,6 +10,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
+
+import com.example.macowner.flickr_api.R;
 
 public abstract class SingleFragmentActivity extends AppCompatActivity {
   protected abstract Fragment createFragment();
